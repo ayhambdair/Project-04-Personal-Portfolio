@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+        name="description"
+        content="Ayham Bdair — MIS graduate learning web development and cybersecurity at 42 Amman."
+    >
+    <title>Ayham Bdair | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="#home" data-t="namePlain">Ayham Bdair</a>
+
+        <nav aria-label="Main navigation">
+            <a href="#about" data-t="aboutTitle">About me</a>
+            <a href="#skills" data-t="skillsTitle">Skills</a>
+            <a href="#projects" data-t="projectsTitle">Projects</a>
+            <a href="#contact" data-t="contactTitle">Contact</a>
+        </nav>
+
+        <div class="controls">
+            <button id="language" type="button" aria-label="Switch language">
+                AR
+            </button>
+            <button id="theme" type="button" aria-label="Switch color theme">
+                ◐
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="portrait">
+                <img src="assets/profile.jpg" alt="Portrait of Ayham Bdair">
+            </div>
+
+            <div class="hero-copy">
+                <div class="eyebrow" data-t="intro">
+                    CURIOUS MIND. CONTINUOUS LEARNER.
+                </div>
+
+                <h1 data-t="name">Ayham Bdair<span>.</span></h1>
+
+                <h2 data-t="role">
+                    Web Development &amp;<br>
+                    Cybersecurity Enthusiast
+                </h2>
+
+                <p data-t="heroText">
+                    Building my skills, one project at a time. Exploring the
+                    intersection of the web and system security.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button" href="#projects" data-t="viewProjects">
+                        Explore my projects
+                    </a>
+                    <a href="#contact" data-t="getInTouch">Get in touch</a>
+                </div>
+
+                <div class="hero-note">
+                    <span data-t="degree">
+                        B.Sc. Management Information Systems
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-head">
+                <h2 data-t="aboutTitle">About me</h2>
+            </div>
+
+            <div>
+                <p class="about-intro" data-t="aboutText">
+                    I’m Ayham Bdair, an aspiring Web Developer and Cybersecurity
+                    Enthusiast from Jordan.
+                </p>
+
+                <p class="about-details" data-t="aboutDetails">
+                    I’m passionate about building web pages and solving technical
+                    challenges. I have a foundation in HTML, CSS, and JavaScript,
+                    and I enjoy turning ideas into practical, interactive projects.
+                    I’m also interested in cybersecurity and continue to expand
+                    my knowledge of programming and system security. Always
+                    learning, building, and improving.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-head">
+                <h2 data-t="skillsTitle">Skills</h2>
+                <span class="section-note" data-t="skillsNote">
+                    My growing toolkit
+                </span>
+            </div>
+
+            <div class="skill-grid">
+                <article>
+                    <span class="icon">&lt;/&gt;</span>
+                    <h3 data-t="web">Web Development</h3>
+                    <p>HTML5 · CSS3 · JavaScript</p>
+                    <small data-t="webDetail">
+                        Semantic structure, styling &amp; interactivity
+                    </small>
+                </article>
+
+                <article>
+                    <span class="icon">{ }</span>
+                    <h3>CSS</h3>
+                    <p>Flexbox · Positioning</p>
+                    <small>Animations &amp; Transitions</small>
+                </article>
+
+                <article>
+                    <span class="icon">&gt;_</span>
+                    <h3 data-t="tools">Tools</h3>
+                    <p>Git · GitHub · Linux Terminal</p>
+                    <small>Command Line</small>
+                </article>
+
+                <article>
+                    <span class="icon">⌘</span>
+                    <h3 data-t="security">Cybersecurity</h3>
+                    <p data-t="fundamentals">Cybersecurity Fundamentals</p>
+                    <small data-t="securityDetail">
+                        Building a foundation in system security
+                    </small>
+                </article>
+            </div>
+
+            <div class="soft">
+                <span data-t="softTitle">Beyond the code</span>
+                <span data-t="problem">Problem Solving</span>
+                <span data-t="continuous">Continuous Learning</span>
+                <span data-t="teamwork">Teamwork</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-head">
+                <h2 data-t="projectsTitle">Projects</h2>
+                <span class="section-note" data-t="projectNote">
+                    My learning journey
+                </span>
+            </div>
+
+            <div id="project-list"></div>
+
+            <p class="muted" data-t="projectDisclaimer">
+                Explore the code and projects on GitHub.
+            </p>
+        </section>
+
+        <section id="hobbies">
+            <div class="section-head">
+                <h2 data-t="hobbiesTitle">Hobbies &amp; interests</h2>
+            </div>
+
+            <div class="interests">
+                <span data-t="hobby1">Learning New Technologies</span>
+                <span data-t="hobby2">Coding &amp; Building Projects</span>
+                <span data-t="hobby3">Exploring Cybersecurity</span>
+                <span data-t="hobby4">Solving Technical Challenges</span>
+                <span data-t="hobby5">
+                    Continuous Learning &amp; Self-Development
+                </span>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div>
+                <div class="eyebrow" data-t="contactEyebrow">LET’S CONNECT</div>
+
+                <h2 data-t="contactLead">
+                    Good conversations.<br>
+                    New possibilities.
+                </h2>
+
+                <div class="contact-detail">
+                    <span data-t="emailLabel">Email</span>
+                    <a
+                        class="email"
+                        href="mailto:ayhambdair63@gmail.com"
+                        dir="ltr"
+                    >
+                        ayhambdair63@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-detail">
+                    <span data-t="phoneLabel">Phone</span>
+                    <a href="tel:+962775151600" dir="ltr">
+                        +962 77 515 1600
+                    </a>
+                </div>
+
+                <div class="socials">
+                    <a
+                        href="https://github.com/ayhambdair"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/ayham-bdair-634794208/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <form id="contact-form">
+                <label for="sender" data-t="yourName">Your name</label>
+                <input
+                    id="sender"
+                    name="name"
+                    required
+                    maxlength="100"
+                    autocomplete="name"
+                >
+
+                <label for="email" data-t="yourEmail">Your email</label>
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    autocomplete="email"
+                >
+
+                <label for="message" data-t="yourMessage">Your message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows="3"
+                    maxlength="3000"
+                ></textarea>
+
+                <button class="button" type="submit" data-t="send">
+                    Open email draft
+                </button>
+
+                <p class="muted" data-t="emailNote">
+                    Opens your email app with a draft. Nothing is sent automatically.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <span>
+            © <span id="year"></span>
+            <span data-t="namePlain">Ayham Bdair</span>
+        </span>
+
+        <span data-t="footer">Always learning. Always building.</span>
+
+        <a href="#home" data-t="top">Back to top</a>
+    </footer>
+</body>
+</html>
